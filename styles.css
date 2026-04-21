@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  cursor: url('imagens/aero_arrow_glow.cur'), auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: #5b0000;
+  text-shadow: red 0px 0px 10px;
+  cursor: url('imagens/aero_link_glow.cur'), auto;
+}
+
+a.active {
+  color: #5b0000;
+  text-shadow: red 0px 0px 10px;
+  cursor: url('imagens/aero_link_glow.cur'), auto;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #5b0000;
+  text-shadow: red 0px 0px 10px;
+}
+
+p {
+  font-family: "Rosarivo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+
+.divisor {
+    height: 2px; /* Espessura no centro */
+    width: 80%;  /* Largura da linha em relação à tela */
+    margin: 10px auto; /* Centraliza a linha e dá espaço vertical */
+    background: linear-gradient(to right, transparent, #5b0000, transparent);
+    border: none;
+}
+
+#casas {
+  display: flex;
+  justify-content: center;
+  gap: 1px; /* Espaçamento entre as casas */
+  margin-top: 20px;
+}
+
+#boxbox {
+  width: 75%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* MAPA */
+
+.mapa-miniatura {
+  width: 300px;
+  cursor: zoom-in;
+  transition: 0.3s;
+  cursor: url('imagens/aero_link_glow.cur'), auto;
+}
+
+.modal-imagem {
+  display: none;             /* Escondido por padrão */
+  position: fixed;           /* Fica parado na tela */
+  z-index: 1000;             /* Garante que fique acima de qualquer elemento */
+  top: 0;
+  left: 0;
+  width: 100vw;              /* Largura total da tela */
+  height: 100vh;             /* Altura total da tela */
+  background: rgba(0, 0, 0, 0.9); 
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;          /* Permite scroll se a imagem for maior que a tela */
+}
+
+.modal-imagem:target {
+  display: flex;             /* Usa flex para centralizar a imagem ampliada */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapa-ampliado {
+  max-width: 90%;            /* Não deixa a imagem encostar nas bordas */
+  max-height: 80vh;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.fechar {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+/* FONTES */
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.rosarivo-regular {
+  font-family: "Rosarivo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rosarivo-regular-italic {
+  font-family: "Rosarivo", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
