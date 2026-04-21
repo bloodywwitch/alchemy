@@ -144,3 +144,57 @@ p {
   font-weight: 400;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  #boxbox {
+    width: 95%;
+  }
+  
+  .conteudo-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mapa-miniatura {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #nav-bar a {
+    display: block;
+     margin-bottom: 10px;
+  }
+}
+
+.casasicons {
+    width: 100%;      
+    max-width: 150px;
+    height: auto;
+}
+
+.grade-casas {
+    display: flex;
+    flex-wrap: wrap;       /* Se não couber na linha, pula para baixo */
+    justify-content: center;
+    gap: 20px;             /* Espaço entre as casas */
+}
+
+.casa-item img {
+    width: 120px;          /* Tamanho controlado pelo CSS */
+    transition: transform 0.3s;
+}
+
+.casa-item img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
