@@ -108,10 +108,27 @@ p {
     margin-top: 20px;      /* Espaço em relação ao texto de cima */
 }
 
-.coluna1, .coluna2, .coluna3 {
+.coluna1, .coluna2, .coluna3, .coluna4 {
     flex: 1;               /* Faz ambas terem a mesma largura */
     padding: 10px;
 }
+
+ul, ol {
+  margin-left: 40px; /* Espaço para não ficar colado na borda */
+  color: black;
+  font-family: "Rosarivo", serif;
+  text-align: left; /* Listas costumam ficar melhores alinhadas à esquerda */
+}
+
+li {
+  margin-bottom: 10px; /* Espaço entre os itens */
+}
+
+/* Personalizar o marcador para vermelho */
+ul li::marker {
+  color: #5b0000;
+}
+
 
 /* MAPA */
 
