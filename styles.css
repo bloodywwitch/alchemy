@@ -53,12 +53,28 @@ h2 {
   text-align: center;
 }
 
+b {
+  color: #5b0000;
+  text-shadow: red 0px 0px 10px;
+}
+
 p {
   font-family: "Rosarivo", cursive;
   font-weight: 400;
   font-style: normal;
   text-align: justify;
   margin-bottom: 20px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .divisor {
@@ -80,6 +96,21 @@ p {
   width: 85%;
   margin: 0 auto;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.colunas {
+    display: flex;         /* Coloca os filhos lado a lado */
+    justify-content: center; /* Centraliza as colunas */
+    gap: 40px;             /* Espaço entre as duas colunas */
+    margin-top: 20px;      /* Espaço em relação ao texto de cima */
+}
+
+.coluna1, .coluna2, .coluna3 {
+    flex: 1;               /* Faz ambas terem a mesma largura */
+    padding: 10px;
 }
 
 /* MAPA */
@@ -210,23 +241,28 @@ p {
   }
   
   .casas { 
-    flex: 1 1 40%; 
-}
+    flex: 1 1 40%;  
+  }
 
+  .colunas {
+    flex-direction: column; 
+    gap: 20px;
+  }
 }
 
 /* CASAS */
 
 .grade-casas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .casas {
-    flex: 1 1 150px;
+    flex: 0 0 calc(25% - 30px);
     max-width: 180px;
     text-align: center;
 }
@@ -247,7 +283,19 @@ img {
   height: auto;
 }
 
+.local-img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
 .icon {
   width: 90px;
   height: 90px;
+}
+
+.cross {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 1));
+  transition: transform 0.3s ease;
 }
