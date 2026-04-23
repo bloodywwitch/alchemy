@@ -28,5 +28,54 @@
     </div>
     <div class="divisor"></div>
     <br>
+    <div id="boxbox">
+        <div class="dados">
+            <h1>Dados</h1>
+            <p>Os dados são ferramentas essenciais em nosso jogo, utilizados para determinar o sucesso ou fracasso de ações. X é a <b>quantidade de dados</b> a serem rolados enquanto Y é o <b>número de lados</b> de cada dado. O prefixo "dv" representa <b>vantagem</b>, e "dd" representa <b>desvantagem</b>. Se precisar, adicione modificadores!</p>
+            <div class="painel-dados">
+                <h2>Rolar Dados</h2>
+                <div class="inputs">
+                    <input type="text" id="inputDado" placeholder="XdY, ddY ou dvY" class="input-dado">
+                    <button onclick="rolarDados()" class="rolagem">JOGAR!</button>
+                </div>
+                <div id="resultado" class="resultado">
+                    <h2>Resultados</h2>
+                    <div class="total">000</div>
+                    <div class="detail">Aguardando...</div>
+                </div>
+            </div>
+        </div>
+        <div class="divisor"></div>
+        <div class="experiencia">
+            <h1>Experiência</h1>
+            <p>?</p>
+            <div class="painel-exp">
+                <h2>Total de EXP</h2>
+                <div class="inputs">
+                    <input type="number" id="inputExp" placeholder="EXP atual" class="input-exp">
+                    <button onclick="calcularNivel()" class="btn-nivel">CALCULAR</button>
+                </div>
+                <div id="resultadoNivel" class="resultado">
+                    <div class="total">Nível <span id="nivelFinal">1</span></div>
+                    <div class="detail" id="xpSobrando">XP Restante: 0</div>
+                </div>
+            </div>
+        </div>
+        <div class="divisor"></div>
+        <div class="honra">
+            <h1>Honra</h1>
+            <p>?</p>
+        </div>
+        <div class="divisor"></div>
+        <div class="combate">
+            <h1>Combate</h1>
+            <p>?</p>
+        </div>
+        <div class="divisor"></div>
+        <footer class="footer">
+            <p class="center">"Vamos nos levantar, vermelhos como a aurora."</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
